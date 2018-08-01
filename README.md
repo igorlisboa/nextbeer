@@ -1,10 +1,10 @@
-#NEXTBEER
-######Sistema de comandas Digitais para bares e restaurantes
+# NEXTBEER
+###### Sistema de comandas Digitais para bares e restaurantes
 
 
-###[*texto descritivo aqui*]
+### [**_texto descritivo aqui_**]
 
-##Instruções de instalação do ambiente de desenvolvimento
+## Instruções de instalação do ambiente de desenvolvimento
 1. First step
 2. Second step
 
