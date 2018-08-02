@@ -4,6 +4,7 @@
   "description": "sistema de comandas digitais - front e back ",
   "main": "index.js",
   "scripts": {
+    "build" : "cd ./back-end/ && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

@@ -10,4 +10,8 @@
 
 
 
-
+### Dependências necessarias
+**Back End**
+- nodemon
+- mongoose
+- express
