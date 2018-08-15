@@ -14,7 +14,7 @@ save = async (req,res) =>{
 };
 
 update = async (req,res) =>{
-	let atualizaUsuario = Usuarios.where({_id:req.body._id}).update(req.body.dados).exec()
+	let atualizaUsuario = await Usuarios.where({_id:req.body._id}).update(req.body.dados).exec()
 	.then(()=>{
 		console.info("Update is working");
 		return res.send("Atualizou a bagaça");
@@ -22,7 +22,7 @@ update = async (req,res) =>{
 };
 
 del = async (req,res) =>{
-	let novoUsuario = Usuarios.remove({_id : req.body._id}, ()=>{
+	let novoUsuario = await Usuarios.remove({_id : req.body._id}, ()=>{
 		return res.send("Apagou tio!");	
 	})
 };
