@@ -13,4 +13,12 @@ router.route('/')
 router.route('/')
 	.post(UsuariosController.save);
 
+//PUT atualiza usuario
+router.route('/')
+	.put(UsuariosController.update);
+
+//PUT atualiza usuario
+router.route('/')
+	.delete(UsuariosController.del);
+
 module.exports = router;
