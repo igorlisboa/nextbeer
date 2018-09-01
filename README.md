@@ -2,7 +2,9 @@
 ###### Sistema de comandas Digitais para bares e restaurantes
 
 
-#Jean Braga
+# Jean Braga 
+# Igor Lisboa
+# Nickael
 
 ### [**_texto descritivo aqui_**]
 
