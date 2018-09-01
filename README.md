@@ -2,6 +2,8 @@
 ###### Sistema de comandas Digitais para bares e restaurantes
 
 
+#Jean Braga
+
 ### [**_texto descritivo aqui_**]
 
 ## Instruções de instalação do ambiente de desenvolvimento
