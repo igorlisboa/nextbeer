@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c590931b-ea03-4c0a-a0df-575ca376c3f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="161">
-                <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <first_editor relative-caret-position="23">
+                <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
               </first_editor>
               <second_editor />
             </state>
@@ -528,12 +528,52 @@
       <path value="$PROJECT_DIR$/back-end/node_modules/yargs/package.json" />
       <path value="$PROJECT_DIR$/back-end/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/containers/DefaultLayout/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Breadcrumbs/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Cards/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Carousels/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Collapses/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Dropdowns/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Forms/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Jumbotrons/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/ListGroups/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Navbars/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Navs/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Paginations/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Popovers/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/ProgressBar/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Switches/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Tables/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Tabs/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Base/Tooltips/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Buttons/BrandButtons/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Buttons/ButtonDropdowns/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Buttons/ButtonGroups/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Buttons/Buttons/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Charts/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Dashboard/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Icons/CoreUIIcons/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Icons/Flags/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Icons/FontAwesome/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Icons/SimpleLineIcons/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Notifications/Alerts/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Notifications/Badges/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Notifications/Modals/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Pages/Login/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Pages/Page404/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Pages/Page500/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Pages/Register/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Theme/Colors/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Theme/Typography/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Users/package.json" />
+      <path value="$PROJECT_DIR$/web/adm-servico/src/views/Widgets/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1113" />
-    <option name="y" value="116" />
-    <option name="width" value="1216" />
+    <option name="x" value="3" />
+    <option name="y" value="39" />
+    <option name="width" value="1206" />
     <option name="height" value="665" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -694,20 +734,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535835148447</updated>
-      <workItem from="1535835152566" duration="173000" />
+      <workItem from="1535835152566" duration="1888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173000" />
+    <option name="totallyTimeSpent" value="1888000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1360" y="-2" width="1366" height="770" extended-state="6" />
+    <frame x="0" y="25" width="1360" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24944155" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25056097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
@@ -735,8 +775,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="161">
-            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <first_editor relative-caret-position="23">
+            <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
           </first_editor>
           <second_editor />
         </state>

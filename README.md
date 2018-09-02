@@ -1,11 +1,6 @@
 # NEXTBEER
 ###### Sistema de comandas Digitais para bares e restaurantes
 
-
-# Jean Braga 
-# Igor Lisboa
-# Nickael
-
 ### [**_texto descritivo aqui_**]
 
 ## Instruções de instalação do ambiente de desenvolvimento
