@@ -33,8 +33,9 @@ class DefaultLayout extends Component {
           <AppSidebar fixed display="lg">
             <AppSidebarHeader />
             <AppSidebarForm />
-            <AppSidebarNav navConfig={navigation} {...this.props} />
-            <AppSidebarFooter />
+            {/* TODO - IMPORTANT navConfig tem que ser mantido, pra poder gerar os novos menus, mas será dinâmico*/}
+            {/*<AppSidebarNav navConfig={navigation} {...this.props} />*/}
+            {/*<AppSidebarFooter />*/}
             <AppSidebarMinimizer />
           </AppSidebar>
           <main className="main">

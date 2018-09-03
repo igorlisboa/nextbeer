@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build" : "cd ./back-end/ && npm install",
+    "start-back" : "cd ./back-end/ && nodemon",
+    "start-front" : "cd ./web/adm-servico/ && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
