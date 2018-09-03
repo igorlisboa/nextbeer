@@ -614,7 +614,7 @@
       <path value="$PROJECT_DIR$/web/adm-servico/src/views/Widgets/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="3" />
     <option name="y" value="39" />
     <option name="width" value="1206" />
@@ -1419,7 +1419,6 @@
       <test-names>
         <test-name value="renders without crashing" />
       </test-names>
-      <method v="2" />
     </configuration>
     <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
@@ -1431,7 +1430,6 @@
       <test-names>
         <test-name value="renders without crashing" />
       </test-names>
-      <method v="2" />
     </configuration>
     <configuration name="start-back" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -1441,7 +1439,6 @@
       </scripts>
       <node-interpreter value="project" />
       <envs />
-      <method v="2" />
     </configuration>
     <configuration name="start-front" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -1451,7 +1448,6 @@
       </scripts>
       <node-interpreter value="project" />
       <envs />
-      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="npm.start-back" />
