@@ -1,26 +1,21 @@
 import React, {Component} from 'react';
-import Row from "reactstrap/src/Row";
-import Col from "reactstrap/src/Col";
-import Card from "reactstrap/src/Card";
-import CardHeader from "reactstrap/src/CardHeader";
-import CardBody from "reactstrap/src/CardBody";
-import Jumbotron from "reactstrap/src/Jumbotron";
-import Button from "reactstrap/src/Button";
+import {Button, Card, CardBody, CardHeader, Col, Jumbotron, Row} from 'reactstrap';
 
 class Cardapio extends Component{
+
+  novoCardapio(){
+
+  };
+
   render(){
     return (
       <div className="animated fadeIn">
         <Row>
           <Col>
             <Card>
-              <CardHeader>
-                <i className="icons icon-book-open"></i><strong>Cardápio</strong>
-                <div className="card-header-actions">
-                  <a href="https://reactstrap.github.io/components/jumbotron/" rel="noreferrer noopener" target="_blank" className="card-header-action">
-                    <small className="text-muted">docs</small>
-                  </a>
-                </div>
+              <CardHeader className="pb-2">
+                  <i className="icons icon-book-open font-3xl align-middle"></i> <span className="font-weight-bold font-4xl text-uppercase ml-3 align-middle">Cardápios</span>
+                  <Button color="warning" className="float-right align-middle" size="lg" onClick="novoCardapio()">Novo Cardápio</Button>
               </CardHeader>
               <CardBody>
                 <Jumbotron>
