@@ -49,7 +49,7 @@ class DefaultLayout extends Component {
                       : (null);
                   },
                 )}
-                <Redirect from="/" to="/dashboard" />
+                <Redirect from="/" to="/cardapio" />
               </Switch>
             </Container>
           </main>

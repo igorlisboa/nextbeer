@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 import {Button, Card, CardBody, CardHeader, Col, Jumbotron, Row} from 'reactstrap';
+import IncluirCardapio from "./IncluirCardapio";
 
 class Cardapio extends Component{
 
-  novoCardapio(){
+  novoCardapio() {
+    {IncluirCardapio()};
 
-  };
+  }
+
+  ;
 
   render(){
     return (
@@ -15,11 +19,11 @@ class Cardapio extends Component{
             <Card>
               <CardHeader className="pb-2">
                   <i className="icons icon-book-open font-3xl align-middle"></i> <span className="font-weight-bold font-4xl text-uppercase ml-3 align-middle">Cardápios</span>
-                  <Button color="warning" className="float-right align-middle" size="lg" onClick="novoCardapio()">Novo Cardápio</Button>
+                  <Button color="warning" className="float-right align-middle" size="lg" onClick={this.novoCardapio.bind(this)}>Novo Cardápio</Button>
               </CardHeader>
               <CardBody>
                 <Jumbotron>
-                  <h1 className="display-3">Hello, world!</h1>
+                  <h1 className="display-3">Ola mundo!</h1>
                   <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra
                     attention to featured content or information.</p>
                   <hr className="my-2" />
