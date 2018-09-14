@@ -10,14 +10,14 @@ const appMiddlewares = require('./middlewares/appMiddlewares');
 
 //ROTAS
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const authRouter = require('./routes/auth');
 const usuariosRouter = require('./routes/usuarios');
 
 const app = express();
 const config = require('./config');
 
 //conexao do banco de dados
-mongoose.connect('mongodb://127.0.0.1:27017/nextbeer');
+mongoose.connect('mongodb://127.0.0.1:27017/nextbeer', { useNewUrlParser: true });
 
 //inicia uma configuração default 
 mongoose.connection.on('connected', ()=>{
@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //inicialização das rotas que acessam os metodos HTTP(get,post,put,delete)
 // aqui vai ter uma rota para direcionar para cada caso de uso e seus controllers
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/auth', authRouter);
 app.use('/usuarios', usuariosRouter);
 
 // catch 404 and forward to error handler

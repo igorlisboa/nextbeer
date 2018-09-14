@@ -2,6 +2,28 @@ import React, { Component } from 'react';
 import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 
 class Login extends Component {
+
+  constructor(){
+    super();
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleEmailChange = this.handleEmailChange.bind(this);
+    this.handlePasswordChange = this.handlePasswordChange.bind(this);
+  }
+
+  handleSubmit(e){
+    e.preventDefault()
+    console.log("Submited")
+  }
+
+  handleEmailChange(e){
+
+  }
+
+  handlePasswordChange(e){
+
+  }
+
   render() {
     return (
       <div className="app flex-row align-items-center">
@@ -11,7 +33,7 @@ class Login extends Component {
               <CardGroup>
                 <Card className="p-4">
                   <CardBody>
-                    <Form>
+                    <Form onSubmit={this.handleSubmit}>
                       <h1>Login</h1>
                       <p className="text-muted">Sign In to your account</p>
                       <InputGroup className="mb-3">
@@ -20,7 +42,7 @@ class Login extends Component {
                             <i className="icon-user"></i>
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input type="text" placeholder="Username" autoComplete="username" />
+                        <Input type="text" placeholder="Username" autoComplete="username" onChange={this.handleEmailChange}/>
                       </InputGroup>
                       <InputGroup className="mb-4">
                         <InputGroupAddon addonType="prepend">
@@ -28,7 +50,7 @@ class Login extends Component {
                             <i className="icon-lock"></i>
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input type="password" placeholder="Password" autoComplete="current-password" />
+                        <Input type="password" placeholder="Password" autoComplete="current-password" onChange={this.handlePasswordChange} />
                       </InputGroup>
                       <Row>
                         <Col xs="6">

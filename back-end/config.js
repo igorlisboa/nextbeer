@@ -1,4 +1,6 @@
 const User = require('./models/usuarios');
+const auth = {};
+auth.JWT_KEY = 'My_K3Y_T0_4PP';
 
 const configureDefaultUser = async () => {
 	let users = await User.find({});
@@ -14,5 +16,6 @@ const configureDefaultUser = async () => {
 };
 
 module.exports = {
-	configureDefaultUser
+	configureDefaultUser,
+    auth
 };
