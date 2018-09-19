@@ -10,8 +10,8 @@ router.route('/')
 	.get(UsuariosController.index);
 
 //POST salva novo usuario
-router.route('/')
-	.post(UsuariosController.save);
+// router.route('/')
+// 	.post(UsuariosController.save);
 
 //PUT atualiza usuario
 router.route('/')
@@ -20,5 +20,8 @@ router.route('/')
 //PUT atualiza usuario
 router.route('/')
 	.delete(UsuariosController.del);
+
+router.route('/registrar')
+	.post(UsuariosController.save)
 
 module.exports = router;

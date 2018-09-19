@@ -10,6 +10,7 @@ const jwt = require('jsonwebtoken');
  */
 router.post('/login', (req, res, next) => {
     const { email, password} = req.body.userData;
+    console.log(req.body.userData);
     if(email && password){
         let tokenData = {
             id: 1

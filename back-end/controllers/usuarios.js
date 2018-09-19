@@ -8,9 +8,22 @@ index = async (req,res) =>{
 
 save = async (req,res) =>{
 	let novoUsuario = new Usuarios(req.body);
-	await novoUsuario.save();
-	console.info("Save is working");
-	return res.send("So Jesus salva!");
+	await novoUsuario.save((err, result) => {
+        if(!err){
+            res.json({
+                success : true,
+                message: 'Usuario Registrado',
+                data : result
+            });
+        }else {
+            res.json({
+                success : false,
+                message: 'Falha ao registrar usuário.',
+                data : err
+            });
+        }
+        return res;
+    });
 };
 
 update = async (req,res) =>{

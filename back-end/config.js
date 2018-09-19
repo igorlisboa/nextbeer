@@ -10,7 +10,7 @@ const configureDefaultUser = async () => {
 		senha : 'senha',
 		nome : 'nome',
 		perfil : 2
-	})
+	});
 	await userDefault.save();
 	console.info('Banco de dados conectado')
 };
