@@ -12,6 +12,11 @@ const Cardapio = Loadable({
   loading : Loading,
 });
 
+const DetalhaCardapio = Loadable({
+  loader : () => import('./funcionalidades/itensCardapio'),
+  loading : Loading,
+});
+
 const Breadcrumbs = Loadable({
   loader: () => import('./views/Base/Breadcrumbs'),
   loading: Loading,
@@ -193,6 +198,7 @@ const User = Loadable({
 const routes = [
   //rota do cardapio
   {path: '/cardapio', exact: true, name: 'Cardápio', component: Cardapio},
+  {path: '/cardapio/detalhe', name: 'Detalhe do Cardápio', component: DetalhaCardapio},
 
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },

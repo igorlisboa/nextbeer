@@ -9869,5 +9869,15 @@ body {
 .app-header .navbar-nav .dropdown-menu-right {
   right: auto; }
 
+.clickable {
+  cursor: pointer; }
+
+.card-item-cardapio {
+  background: #dfdfdf;
+  margin: 10px 20px;
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 15px; }
+
 html body .app.flex-row.align-items-center {
   height: 100vh; }

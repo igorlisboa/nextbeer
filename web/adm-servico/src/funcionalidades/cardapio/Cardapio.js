@@ -1,11 +1,96 @@
 import React, {Component} from 'react';
 import {Button, Card, CardBody, CardHeader, Col, Jumbotron, Row} from 'reactstrap';
 
+import {CardapioSub} from './CardapioSub';
+
 class Cardapio extends Component{
 
-  novoCardapio(){
+  listaCardapios = [];
 
+  constructor(){
+    super();
+    this.buscaCardapios = this.buscaCardapios.bind(this);
+    this.listaCardapios = this.buscaCardapios();
+  }
+
+  novoCardapio(){
   };
+
+  buscaCardapios(){
+   return [
+      {
+        nome: "Drink's",
+        img: "fa fa-glass",
+        itens : [
+          {nome : "teste",
+          preco : 123,
+          img : "some-url"},
+          {nome : "teste",
+            preco : 123,
+            img : "some-url"},
+          {nome : "teste",
+            preco : 123,
+            img : "some-url"},
+          {nome : "teste",
+            preco : 123,
+            img : "some-url"},
+        ],
+        tema : 'bg-green'
+      },
+      {
+        nome: "Comidas",
+        img: "fa fa-cutlery",
+        itens : [
+          {nome : "teste2",
+          preco : 1234,
+          img : "some-url2"},
+          {nome : "teste2",
+            preco : 1234,
+            img : "some-url2"},
+        ],
+        tema : 'bg-blue'
+      },{
+        nome: "Bebidas",
+       img: "fa fa-beer",
+       itens : [
+         {nome : "teste3",
+         preco : 12345,
+         img : "some-url3"},
+         {nome : "teste3",
+           preco : 12345,
+           img : "some-url3"},
+         {nome : "teste3",
+           preco : 12345,
+           img : "some-url3"},
+         {nome : "teste3",
+           preco : 12345,
+           img : "some-url3"},
+         {nome : "teste3",
+           preco : 12345,
+           img : "some-url3"},
+         {nome : "teste3",
+           preco : 12345,
+           img : "some-url3"},
+       ],
+       tema : 'bg-orange'
+      },{
+        nome: "Diversão",
+       img: "fa fa-gamepad",
+       itens : [
+         {nome : "teste",
+         preco : 123,
+         img : "some-url"},
+         {nome : "teste",
+           preco : 123,
+           img : "some-url"},
+         {nome : "teste",
+           preco : 123,
+           img : "some-url"},
+       ],
+       tema : 'bg-red'
+      },
+    ];
+  }
 
   render(){
     return (
@@ -15,19 +100,19 @@ class Cardapio extends Component{
             <Card>
               <CardHeader className="pb-2">
                   <i className="icons icon-book-open font-3xl align-middle"></i> <span className="font-weight-bold font-4xl text-uppercase ml-3 align-middle">Cardápios</span>
-                  <Button color="warning" className="float-right align-middle" size="lg" onClick="novoCardapio()">Novo Cardápio</Button>
+                  <Button color="primary" className="float-right align-middle" size="lg" onClick="novoCardapio()">Novo Cardápio</Button>
               </CardHeader>
               <CardBody>
-                <Jumbotron>
-                  <h1 className="display-3">Hello, world!</h1>
-                  <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra
-                    attention to featured content or information.</p>
-                  <hr className="my-2" />
-                  <p>It uses utility classes for typgraphy and spacing to space content out within the larger container.</p>
-                  <p className="lead">
-                    <Button color="primary">Learn More</Button>
-                  </p>
-                </Jumbotron>
+                <Row>
+                    {
+                      this.listaCardapios.length > 0 ?
+                          this.listaCardapios.map(cardapio =>{
+                              return (<CardapioSub dados={cardapio}></CardapioSub>)
+                          })
+                      :
+                      <p>Nenhum cardápio registrado</p>
+                    }
+                </Row>
               </CardBody>
             </Card>
           </Col>
