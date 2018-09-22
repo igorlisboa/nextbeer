@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c590931b-ea03-4c0a-a0df-575ca376c3f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/adm-servico/src/funcionalidades/cardapio/CardapioSub.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/adm-servico/src/funcionalidades/itensCardapio/DetalhaCardapio.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/adm-servico/src/funcionalidades/itensCardapio/ItemCardapio.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/adm-servico/src/funcionalidades/itensCardapio/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/adm-servico/src/views/_nav_old.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/adm-servico/src/_nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/adm-servico/src/_nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/adm-servico/src/containers/DefaultLayout/DefaultLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/adm-servico/src/containers/DefaultLayout/DefaultLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/adm-servico/src/funcionalidades/cardapio/Cardapio.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/adm-servico/src/funcionalidades/cardapio/Cardapio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/adm-servico/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/adm-servico/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/adm-servico/src/scss/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/adm-servico/src/scss/_custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/adm-servico/src/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/adm-servico/src/scss/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="c590931b-ea03-4c0a-a0df-575ca376c3f0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -91,7 +78,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/adm-servico/src/funcionalidades/cardapio/Cardapio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state>
               <caret line="102" column="40" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -104,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/web/adm-servico/src/scss/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2024">
-              <caret line="9608" column="8" lean-forward="true" selection-start-line="9608" selection-start-column="4" selection-end-line="9608" selection-end-column="8" />
+              <caret line="9608" column="8" selection-start-line="9608" selection-start-column="4" selection-end-line="9608" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -112,20 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/adm-servico/src/scss/_custom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/adm-servico/src/funcionalidades/cardapio/CardapioSub.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-161">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="23">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -134,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/web/adm-servico/src/routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
-              <caret line="233" column="30" lean-forward="true" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="30" />
+              <caret line="233" column="30" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="30" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -146,40 +121,7 @@
         <entry file="file://$PROJECT_DIR$/web/adm-servico/src/_nav.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/adm-servico/src/views/_nav_old.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="151" column="6" lean-forward="true" selection-start-line="125" selection-start-column="4" selection-end-line="151" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/adm-servico/src/funcionalidades/itensCardapio/DetalhaCardapio.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/adm-servico/src/funcionalidades/itensCardapio/ItemCardapio.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -354,41 +296,7 @@
               <item name="adm-servico" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="funcionalidades" type="462c0819:PsiDirectoryNode" />
-              <item name="cardapio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nextbeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nextbeer" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="adm-servico" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="funcionalidades" type="462c0819:PsiDirectoryNode" />
               <item name="itensCardapio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nextbeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nextbeer" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="adm-servico" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nextbeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nextbeer" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="adm-servico" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="style.scss" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="nextbeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nextbeer" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="adm-servico" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -408,11 +316,11 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/adm-servico/src/views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/adm-servico/src/funcionalidades/itensCardapio" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/adm-servico/src/views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -512,7 +420,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40593000" />
+    <option name="totallyTimeSpent" value="40601000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -525,7 +433,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1360" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49512196" visible="true" weight="0.25056097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -547,6 +454,26 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.497545" weight="0.25056097" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.502455" side_tool="true" weight="0.25056097" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49962604" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4988781" weight="0.22913256" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50112194" side_tool="true" weight="0.22913256" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -756,13 +683,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/adm-servico/src/funcionalidades/cardapio/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/adm-servico/src/funcionalidades/cardapio/index.js" />
     <entry file="file://$PROJECT_DIR$/web/adm-servico/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -813,7 +734,7 @@
     <entry file="file://$PROJECT_DIR$/web/adm-servico/src/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
-          <caret line="233" column="30" lean-forward="true" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="30" />
+          <caret line="233" column="30" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="30" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -830,9 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -840,9 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -856,7 +771,7 @@
     <entry file="file://$PROJECT_DIR$/web/adm-servico/src/_nav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -864,29 +779,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-161">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/adm-servico/src/scss/_custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/adm-servico/src/scss/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2024">
-          <caret line="9608" column="8" lean-forward="true" selection-start-line="9608" selection-start-column="4" selection-end-line="9608" selection-end-column="8" />
+          <caret line="9608" column="8" selection-start-line="9608" selection-start-column="4" selection-end-line="9608" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/adm-servico/src/funcionalidades/cardapio/Cardapio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state>
           <caret line="102" column="40" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
