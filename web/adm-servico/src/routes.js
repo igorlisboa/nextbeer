@@ -17,6 +17,11 @@ const DetalhaCardapio = Loadable({
   loading : Loading,
 });
 
+const Mesas = Loadable({
+  loader: () => import('./funcionalidades/mesas'),
+  loading: Loading,
+});
+
 const Breadcrumbs = Loadable({
   loader: () => import('./views/Base/Breadcrumbs'),
   loading: Loading,
@@ -199,6 +204,7 @@ const routes = [
   //rota do cardapio
   {path: '/cardapio', exact: true, name: 'Cardápio', component: Cardapio},
   {path: '/cardapio/detalhe', name: 'Detalhe do Cardápio', component: DetalhaCardapio},
+  {path: '/mesas', name: 'Mesas', component: Mesas},
 
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
