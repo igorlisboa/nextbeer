@@ -1,5 +1,5 @@
 import React from 'react';
-import Loadable from 'react-loadable'
+import Loadable from 'react-loadable';
 
 import DefaultLayout from './containers/DefaultLayout';
 
@@ -15,6 +15,16 @@ const Cardapio = Loadable({
 const DetalhaCardapio = Loadable({
   loader : () => import('./funcionalidades/itensCardapio'),
   loading : Loading,
+});
+
+const IncluirEditarCardapio = Loadable({
+  loader : () => import('./funcionalidades/cardapio'),
+  loading : Loading,
+});
+
+const Mesas = Loadable({
+  loader: () => import('./funcionalidades/mesas'),
+  loading: Loading,
 });
 
 const Breadcrumbs = Loadable({
@@ -199,6 +209,8 @@ const routes = [
   //rota do cardapio
   {path: '/cardapio', exact: true, name: 'Cardápio', component: Cardapio},
   {path: '/cardapio/detalhe', name: 'Detalhe do Cardápio', component: DetalhaCardapio},
+  {path: '/cardapio/incluir', name: 'Incluir do Cardápio', component: IncluirEditarCardapio},
+  {path: '/mesas', name: 'Mesas', component: Mesas},
 
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
