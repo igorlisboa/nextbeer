@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import {Button, Card, CardBody, CardHeader, Col, Jumbotron, Row} from 'reactstrap';
+import {Button, Card, CardBody, CardHeader, Col, Row, Modal,ModalBody, ModalFooter,ModalHeader} from 'reactstrap';
 
 import {CardapioSub} from './CardapioSub';
+import IncluirEditarCardapio from './IncluirEditarCardapio';
 
 class Cardapio extends Component{
 
@@ -9,13 +10,29 @@ class Cardapio extends Component{
 
   constructor(){
     super();
+
+    this.state = {
+      isOpenModalIncluirEditar : false,
+    };
+
     this.buscaCardapios = this.buscaCardapios.bind(this);
+    this.novoCardapio = this.novoCardapio.bind(this);
+    this.toggle = this.toggle.bind(this);
+
     this.listaCardapios = this.buscaCardapios();
   }
 
-  novoCardapio(){
-  };
+  toggle(x){
+    console.log(x);
+    this.novoCardapio();
+  }
 
+  novoCardapio(){
+      this.setState({
+        isOpenModalIncluirEditar: !this.state.isOpenModalIncluirEditar
+      });
+  }
+                
   buscaCardapios(){
    return [
       {
@@ -94,13 +111,15 @@ class Cardapio extends Component{
 
   render(){
     return (
+      <div>
       <div className="animated fadeIn">
         <Row>
           <Col>
             <Card>
               <CardHeader className="pb-2">
                   <i className="icons icon-book-open font-3xl align-middle"></i> <span className="font-weight-bold font-4xl text-uppercase ml-3 align-middle">Cardápios</span>
-                  <Button color="primary" className="float-right align-middle" size="lg" onClick="novoCardapio()">Novo Cardápio</Button>
+                  <Button color="primary" className="float-right align-middle" size="lg" onClick={this.novoCardapio}>Novo Cardápio</Button>
+                  
               </CardHeader>
               <CardBody>
                 <Row>
@@ -118,6 +137,13 @@ class Cardapio extends Component{
           </Col>
         </Row>
       </div>
+              {/*className={'modal-lg '+this.props.className}*/}
+
+            <IncluirEditarCardapio open={this.state.isOpenModalIncluirEditar} toggle={this.toggle}/>
+        
+
+      </div>
+
     );
   }
 }
