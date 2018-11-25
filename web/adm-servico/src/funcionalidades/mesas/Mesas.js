@@ -15,7 +15,53 @@ class Mesas extends Component{
               </CardHeader>
               <CardBody>
                 <Row>
-                    <h1>FUNFOU</h1>
+                  <Card>
+                    <CardHeader className="pb-2">
+                      <span className="font-weight-bold font-2xl text-uppercase ml-3 align-middle">Mesa 1</span>
+                    </CardHeader>
+                    <CardBody>
+                      <Row>
+                        <Col>
+                          <Button color="primary" className="float-right align-middle">Editar</Button>
+                        </Col>
+                        <Col>
+                          <Button color="primary" className="float-right align-middle">Fechar</Button>
+                        </Col>
+                      </Row>
+                    </CardBody>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="pb-2">
+                      <span className="font-weight-bold font-2xl text-uppercase ml-3 align-middle">Mesa 2</span>
+                    </CardHeader>
+                    <CardBody>
+                      <Row>
+                        <Col>
+                          <Button color="primary" className="float-right align-middle">Editar</Button>
+                        </Col>
+                        <Col>
+                          <Button color="primary" className="float-right align-middle">Fechar</Button>
+                        </Col>
+                      </Row>
+                    </CardBody>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="pb-2">
+                      <span className="font-weight-bold font-2xl text-uppercase ml-3 align-middle">Mesa 3</span>
+                    </CardHeader>
+                    <CardBody>
+                      <Row>
+                        <Col>
+                          <Button color="primary" className="float-right align-middle">Editar</Button>
+                        </Col>
+                        <Col>
+                          <Button color="primary" className="float-right align-middle">Fechar</Button>
+                        </Col>
+                      </Row>
+                    </CardBody>
+                  </Card>
                 </Row>
               </CardBody>
             </Card>
