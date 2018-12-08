@@ -4,6 +4,8 @@ import {Button, Card, CardBody, CardHeader, Col, Row} from 'reactstrap';
 import {CardapioSub} from './CardapioSub';
 import IncluirEditarCardapio from './IncluirEditarCardapio';
 
+import axios from 'axios';
+
 export default class Cardapio extends Component{
 
   listaCardapios = [];
@@ -19,7 +21,11 @@ export default class Cardapio extends Component{
     this.novoCardapio = this.novoCardapio.bind(this);
     this.toggle = this.toggle.bind(this);
 
-    this.listaCardapios = this.buscaCardapios();
+    // this.listaCardapios = this.buscaCardapios();
+  }
+
+  componentDidMount(){
+    this.buscaCardapios();
   }
 
   render(){
@@ -68,124 +74,24 @@ export default class Cardapio extends Component{
   }
 
   buscaCardapios(){
-    return [
-      {
-        nome: "Drink's",
-        img: "fa fa-glass",
-        itens : [
-          {nome : "teste",
-            preco : 12.3,
-            img : "some-url",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-          {nome : "teste",
-            preco : 12.3,
-            img : "some-url",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-          {nome : "teste",
-            preco : 12.3,
-            img : "some-url",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-          {nome : "teste",
-            preco : 12.3,
-            img : "some-url",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-        ],
-        tema : 'bg-green'
-      },
-      {
-        nome: "Comidas",
-        img: "fa fa-cutlery",
-        itens : [
-          {nome : "teste2",
-            preco : 12.34,
-            img : "some-url2",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-          {nome : "teste2",
-            preco : 12.34,
-            img : "some-url2",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-        ],
-        tema : 'bg-blue'
-      },{
-        nome: "Bebidas",
-        img: "fa fa-beer",
-        itens : [
-          {nome : "teste3",
-            preco : 123.45,
-            img : "some-url3",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-          {nome : "teste3",
-            preco : 123.45,
-            img : "some-url3",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-          {nome : "teste3",
-            preco : 123.45,
-            img : "some-url3",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-          {nome : "teste3",
-            preco : 123.45,
-            img : "some-url3",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-          {nome : "teste3",
-            preco : 123.45,
-            img : "some-url3",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-          {nome : "teste3",
-            preco : 123.45,
-            img : "some-url3",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-        ],
-        tema : 'bg-orange'
-      },{
-        nome: "Diversão",
-        img: "fa fa-gamepad",
-        itens : [
-          {nome : "teste",
-            preco : 12.3,
-            img : "some-url",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-          {nome : "teste",
-            preco : 12.3,
-            img : "some-url",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-          {nome : "teste",
-            preco : 12.3,
-            img : "some-url",
-            codigo : "a12",
-            descricao : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar."
-          },
-        ],
-        tema : 'bg-red'
-      },
-    ];
+
+
+    axios.get('http://localhost:8000/cardapio', {
+      headers:{
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Accept': 'application/json'}
+    })
+      .then(response => {
+        console.log(response)
+      })
+      .catch(err =>{
+        console.log(err)
+      });
+    // fetch('http://localhost:8000/cardapio')
+    //   .then(response => response.json())
+    //   .then(data => console.log(data));
+
+    // return true
   }
 
 }
