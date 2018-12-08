@@ -1,0 +1,3 @@
+[submodule "web/react-pwa"]
+	path = web/react-pwa
+	url = ../../igorlisboa/nextbeer.git

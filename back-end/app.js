@@ -12,15 +12,18 @@ const appMiddlewares = require('./middlewares/appMiddlewares');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const usuariosRouter = require('./routes/usuarios');
+const cardapioRouter = require('./routes/cardapio');
 
 const app = express();
 const config = require('./config');
 
 //conexao do banco de dados
-mongoose.connect('mongodb://127.0.0.1:27017/nextbeer');
+// mongoose.connect('mongodb://127.0.0.1:27017/nextbeer');
+mongoose.connect('mongodb://nextbeer:nextbeer2018@ds011912.mlab.com:11912/nextbeer_tcc');
 
 //inicia uma configuração default 
 mongoose.connection.on('connected', ()=>{
+    console.log('====================  DB connectado  ====================');
 	config.configureDefaultUser();
 });
 
@@ -36,6 +39,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/usuarios', usuariosRouter);
+app.use('/cardapio', cardapioRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
