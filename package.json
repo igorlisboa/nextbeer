@@ -4,9 +4,9 @@
   "description": "sistema de comandas digitais - front e back ",
   "main": "index.js",
   "scripts": {
-    "build" : "cd ./back-end/ && npm install",
-    "start-back" : "cd ./back-end/ && nodemon",
-    "start-front" : "cd ./web/adm-servico/ && npm start",
+    "build": "cd ./back-end/ && npm install",
+    "start-back": "cd ./back-end/ && nodemon",
+    "start-front": "cd ./web/adm-servico/ && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,5 +17,13 @@
     "bar"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorlisboa/nextbeer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igorlisboa/nextbeer/issues"
+  },
+  "homepage": "https://github.com/igorlisboa/nextbeer#readme"
 }
