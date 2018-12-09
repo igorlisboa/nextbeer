@@ -14,6 +14,11 @@ export default {
           url: '/mesas',
           icon: 'icon-book-open',
         },
+        {
+          name: 'IncluirItemComanda',
+          url: '/mesas/comanda/item',
+          icon: 'icon-book-open',
+        },
       ],
     },
   ]

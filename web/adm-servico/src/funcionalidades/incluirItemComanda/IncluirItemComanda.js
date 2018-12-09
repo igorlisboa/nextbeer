@@ -17,7 +17,7 @@ import {
 import Widget02 from "../../views/Widgets/Widget02";
 import ItemCardapio from "../itensCardapio/ItemCardapio";
 
-class Mesas extends Component {
+class IncluirItemComanda extends Component {
 
   constructor(props){
     super(props);
@@ -35,7 +35,7 @@ class Mesas extends Component {
       <Modal isOpen={true} toggle={this.toggle} centered={true} size={'lg'} backdrop={'static'}>
 
         <ModalHeader toggle={this.toggle} className="pb-2" >
-          <span className="font-weight-bold font-4xl text-uppercase ml-3 align-middle">Mesa 1</span>
+          <span className="font-weight-bold font-4xl text-uppercase ml-3 align-middle">Adicionar Item</span>
         </ModalHeader>
 
         <ModalBody>
@@ -177,4 +177,4 @@ class Mesas extends Component {
   }
 }
 
-export default Mesas;
+export default IncluirItemComanda;

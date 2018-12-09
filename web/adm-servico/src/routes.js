@@ -27,6 +27,11 @@ const Mesas = Loadable({
   loading: Loading,
 });
 
+const IncluirItemComanda = Loadable({
+  loader: () => import('./funcionalidades/incluirItemComanda'),
+  loading: Loading,
+});
+
 const Breadcrumbs = Loadable({
   loader: () => import('./views/Base/Breadcrumbs'),
   loading: Loading,
@@ -211,6 +216,7 @@ const routes = [
   {path: '/cardapio/detalhe', name: 'Detalhe do Cardápio', component: DetalhaCardapio},
   {path: '/cardapio/incluir', name: 'Incluir do Cardápio', component: IncluirEditarCardapio},
   {path: '/mesas', name: 'Mesas', component: Mesas},
+  {path: '/mesas/comanda/item', name: 'IncluirItemComanda', component: IncluirItemComanda},
 
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },

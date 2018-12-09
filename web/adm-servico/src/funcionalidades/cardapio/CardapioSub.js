@@ -45,7 +45,7 @@ export class CardapioSub extends Component{
             <div className="brand-card">
               <Link to={{pathname :'/cardapio/detalhe', dados : dados.itens}} className="clickable">
                 <div className={dados.tema + " brand-card-header"}>
-                  <i className={dados.img}></i>
+                  <i className={dados.icone}></i>
                 </div>
                 <div className="brand-card-body">
                   <div>
