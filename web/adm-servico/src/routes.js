@@ -215,7 +215,7 @@ const routes = [
   {path: '/cardapio', exact: true, name: 'Cardápio', component: Cardapio},
   {path: '/cardapio/detalhe', name: 'Detalhe do Cardápio', component: DetalhaCardapio},
   {path: '/cardapio/incluir', name: 'Incluir do Cardápio', component: IncluirEditarCardapio},
-  {path: '/mesas', name: 'Mesas', component: Mesas},
+  {path: '/mesas', exact: true, name: 'Mesas', component: Mesas},
   {path: '/mesas/comanda/item', name: 'IncluirItemComanda', component: IncluirItemComanda},
 
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
