@@ -31,7 +31,7 @@ export default class ItemCardapio extends Component{
             <p>{this.props.dados.descricao}</p>
           </Col>
           <Col md="2" className="text-center">
-            <h2>{this.props.dados.preco}</h2>
+            <h2>R$ {this.props.dados.preco}</h2>
             <Row style={styleItens.buttonContainer}>
               <Col md={'12'}>
                 <Button color="warning" size="sm" block onClick={this.editarItem}>EDITAR</Button>

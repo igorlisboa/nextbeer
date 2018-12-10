@@ -20,7 +20,7 @@ const defaultProps = {
   icon: 'icon-people',
   color: 'info',
   value: '25',
-  children: 'Visitors',
+  children: 'Visasdfasdfitors',
   invert: false,
 };
 
@@ -49,7 +49,8 @@ class Widget04 extends Component {
             <i className={card.icon}></i>
           </div>
           <div className="h4 mb-0">{header}</div>
-          <small className="text-muted text-uppercase font-weight-bold">{children}</small>
+          <div className="h4 mb-0 text-right">R$ {children}</div>
+          {/*<small className="text-muted text-uppercase font-weight-bold">{children}</small>*/}
           <Progress className={progress.style} color={progress.color} value={progress.value} />
         </CardBody>
       </Card>

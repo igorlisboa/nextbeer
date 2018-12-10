@@ -1,89 +1,131 @@
 import React, {Component} from 'react';
-import {Button, Card, CardBody, CardHeader, Col, Row} from 'reactstrap';
+import {
+  Button,
+  Col,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+  FormGroup,
+  Input,
+  Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
+  Row,
+  UncontrolledDropdown,
+  Label,
 
-import {CardapioSub} from './CardapioSub';
-import IncluirEditarCardapio from './IncluirEditarCardapio';
+} from 'reactstrap';
 
-import axios from 'axios';
-
-export default class Cardapio extends Component{
+class IncluirItemComanda extends Component {
 
   listaCardapios = [];
 
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
 
-    this.state = {
-      isOpenModalIncluirEditar : false,
-    };
-
-    this.buscaCardapios = this.buscaCardapios.bind(this);
-    this.novoCardapio = this.novoCardapio.bind(this);
     this.toggle = this.toggle.bind(this);
+    this.selecionaCategoria = this.selecionaCategoria.bind(this);
 
     this.listaCardapios = this.buscaCardapios();
   }
 
-  componentDidMount(){
-    this.buscaCardapios();
+  toggle(event){
+    console.log('DO');
   }
 
-  render(){
-    return (
-      <div>
+  selecionaCategoria(event){
+    console.log(JSON.stringify(event.target.value))
+  }
 
-        <div className="animated fadeIn">
-          <Row>
-            <Col>
-              <Card>
-                <CardHeader className="pb-  2">
-                    <i className="icons icon-book-open font-3xl align-middle"></i> <span className="font-weight-bold font-4xl text-uppercase ml-3 align-middle">Cardápios</span>
-                    <Button color="primary" className="float-right align-middle" size="lg" onClick={this.novoCardapio}>Novo Cardápio</Button>
-                </CardHeader>
-                <CardBody>
-                  <Row>
-                      {
-                        this.listaCardapios.length > 0 ?
-                            this.listaCardapios.map(cardapio =>{
-                                return (<CardapioSub dados={cardapio}></CardapioSub>)
-                            })
-                        :
-                        <p>Nenhum cardápio registrado</p>
-                      }
-                  </Row>
-                </CardBody>
-              </Card>
-            </Col>
-          </Row>
-        </div>
-        <IncluirEditarCardapio open={this.state.isOpenModalIncluirEditar} toggle={this.toggle}/>
-      </div>
+  render() {
+    // this.props.open = true;
+    let interator = [1,2,3,4,5,6,7,8,9,10];
+    return (
+      <Modal isOpen={true} toggle={this.toggle} centered={true} size={'lg'} backdrop={'static'}>
+
+        <ModalHeader toggle={this.toggle} className="pb-2" >
+          <span className="font-weight-bold font-4xl text-uppercase ml-3 align-middle">Adicionar Item do Cardápio</span>
+        </ModalHeader>
+
+        <ModalBody>
+
+
+          <div className="text-center my-2">
+            <FormGroup row>
+              <Label for="exampleSelect" sm={2}>Categoria</Label>
+              <Col sm={10}>
+                <Input type="select" name="select" id="exampleSelect" onChange={this.selecionaCategoria}>
+                  {
+                    this.listaCardapios.map(categoria => {
+                      return (<option value={categoria.itens}>{categoria.nome}</option>)
+                    })
+                  }
+
+                </Input>
+              </Col>
+            </FormGroup>
+          </div>
+
+          <div className="text-center my-2">
+            <FormGroup row>
+              <Label for="exampleSelect" sm={2}>Itens</Label>
+              <Col sm={10}>
+                <Input type="select" name="select" id="exampleSelect" onChange={this.selecionaCategoria}>
+                  {
+                    this.listaCardapios[0].itens.map(item => {
+                      return (<option value={item}>{item.nome}</option>)
+                    })
+                  }
+
+                </Input>
+              </Col>
+            </FormGroup>
+          </div>
+          <div className="text-center my-2">
+            <FormGroup row>
+              <Label for="exampleSelect" sm={2}>Quantidade</Label>
+              <Col sm={4}>
+                <Input type="select" name="select" id="exampleSelect" onChange={this.selecionaCategoria}>
+                  {
+                    interator.map(i => {
+                      return (<option value={i}>{i}</option>);
+                    })
+                  }
+                </Input>
+              </Col>
+            </FormGroup>
+          </div>
+          <div>
+            <Row>
+              <Col>
+                <Button color="success" className="float-left align-middle" size='lg' block>Adicionar</Button>
+              </Col>
+            </Row>
+          </div>
+
+        </ModalBody>
+
+        <ModalFooter>
+
+        </ModalFooter>
+
+
+      </Modal>
 
     );
   }
 
-  //METODOS E FUNÇOES
-
-  toggle(x){
-    this.novoCardapio();
-  }
-
-  novoCardapio(){
-    this.setState({
-      isOpenModalIncluirEditar: !this.state.isOpenModalIncluirEditar
-    });
-  }
-
   buscaCardapios(){
 
-   return [
+    return [
       {
         nome: "Drink's",
         icone: "fa fa-glass",
         itens: [
           {
             codigoProduto: "a12",
-            nome: "teste",
+            nome: "Chopp",
             preco: "12.3",
             descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar.",
             imagens: [
@@ -172,3 +214,5 @@ export default class Cardapio extends Component{
   }
 
 }
+
+export default IncluirItemComanda;
