@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import GuestLayout from './guest-layout';
+import {Card, CardHeader, CardBody, Row, Col} from "reactstrap";
 
 const Column = (props) => {
   const { title, description, link } = props;
@@ -64,6 +65,25 @@ export default () => (
           </div>
 
         </div>
+
+
       </div>
+    <div>
+      <Card >
+        <CardHeader>
+          <span>Teste</span>
+        </CardHeader>
+        <CardBody>
+          <Row>
+            <Col>
+              <Card>
+                <h1>Ola</h1>
+              </Card>
+            </Col>
+          </Row>
+        </CardBody>
+      </Card>
+    </div>
+
   </GuestLayout>
 );
