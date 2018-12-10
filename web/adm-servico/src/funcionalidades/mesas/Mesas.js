@@ -36,6 +36,8 @@ class Mesas extends Component {
 
         <ModalHeader toggle={this.toggle} className="pb-2" >
           <span className="font-weight-bold font-4xl text-uppercase ml-3 align-middle">Mesa 1</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span className="font-weight-bold font-4xl text-uppercase ml-3 align-middle pl-xl-3">Senha: 4589</span>
         </ModalHeader>
 
         <ModalBody>

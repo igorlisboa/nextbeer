@@ -19,6 +19,11 @@ export default {
           url: '/mesas/comanda/item',
           icon: 'icon-book-open',
         },
+        {
+          name: 'FecharComanda',
+          url: '/mesas/comanda/fechar',
+          icon: 'icon-book-open',
+        },
       ],
     },
   ]

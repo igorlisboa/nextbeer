@@ -32,6 +32,11 @@ const IncluirItemComanda = Loadable({
   loading: Loading,
 });
 
+const FecharComanda = Loadable({
+  loader: () => import('./funcionalidades/fecharComanda'),
+  loading: Loading,
+});
+
 const Breadcrumbs = Loadable({
   loader: () => import('./views/Base/Breadcrumbs'),
   loading: Loading,
@@ -217,6 +222,7 @@ const routes = [
   {path: '/cardapio/incluir', name: 'Incluir do Cardápio', component: IncluirEditarCardapio},
   {path: '/mesas', exact: true, name: 'Mesas', component: Mesas},
   {path: '/mesas/comanda/item', name: 'IncluirItemComanda', component: IncluirItemComanda},
+  {path: '/mesas/comanda/fechar', name: 'FecharComanda', component: FecharComanda},
 
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },

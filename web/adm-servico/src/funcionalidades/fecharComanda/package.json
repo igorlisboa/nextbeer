@@ -1,6 +1,6 @@
 {
-  "name": "IncluirItemComanda",
+  "name": "FecharComanda",
   "version": "0.0.0",
   "private": true,
-  "main": "IncluirItemComanda.js"
+  "main": "FecharComanda.js"
 }
