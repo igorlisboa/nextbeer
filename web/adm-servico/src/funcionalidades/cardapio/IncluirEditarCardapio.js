@@ -14,6 +14,7 @@ import {Button,
         ModalHeader,
         ModalFooter        } from "reactstrap";
 import React, {Component} from "react";
+import axios from 'axios';
 
 class IncluirEditarCardapio extends Component{
 
@@ -23,7 +24,11 @@ class IncluirEditarCardapio extends Component{
     this.restricaoChange = this.restricaoChange.bind(this);
     this.state = {
       restricao : false,
-      isOpen : false
+      isOpen : false,
+        nome: "",
+        icone: "",
+        itens: [],
+        tema: ''
     };
 
     this.toggle = this.toggle.bind(this);
@@ -37,8 +42,24 @@ class IncluirEditarCardapio extends Component{
 
   salvaAlteracao(event){
     // TODO colocar aqui a logica para salvar
-    console.log("salvou/alterou");
-    this.toggle(event);
+    let novoCardapio = {...this.state.novoCardapio};
+    //   nome : "",
+    //   icone : String,
+    //   itens : [],
+    //   tema : String
+    // };
+
+    console.log("============================================", this.state.novoCardapio)
+
+    axios.post('http://localhost:8000/cardapio', {novoCardapio})
+      .then(response => {
+        console.log(response);
+        console.log("salvou/alterou");
+        this.toggle(event);
+      }).catch(err =>{
+      console.log(err);
+      })
+
   }
 
   toggle(event){
@@ -76,43 +97,43 @@ class IncluirEditarCardapio extends Component{
                       <FormGroup row>
                         <Label for="nome" md={2}>Nome cardápio</Label>
                         <Col md={10}>
-                          <Input  type="text" name="nome" id="nome" placeholder="Nome do Cardápio"/>
+                          <Input  type="text" name="nome" id="nome" placeholder="Nome do Cardápio"  onChange={val => this.setState({nome : val})}/>
                         </Col>
                       </FormGroup>
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={12}>
+                    <Col md={6}>
                       <FormGroup row>
                         <Label for="icone" md={2}>Icone</Label>
                         <Col md={10}>
-                          <Input type="select" name="icone" id="icone">
-                            {
-
-                            }
-                            <option>5</option>
+                          <Input type="select" name="icone" id="icone" onChange={(val)=>{this.setState({icone : val})}} >
+                            <option value={'fa fa-glass'}>Taça</option>
+                            <option value={'fa fa-cutlery'}>Garfo e faca</option>
+                            <option value={'fa fa-beer'}>Cerveja</option>
+                            <option value={'fa fa-gamepad'}>Joystick</option>
+                          </Input>
+                        </Col>
+                      </FormGroup>
+                    </Col>
+                    <Col md={6}>
+                      <FormGroup row>
+                        <Label for="Tema" md={2}>Tema</Label>
+                        <Col md={10}>
+                          <Input type="select" name="tema" id="tema" onChange={(val)=>{this.setState({icone : val})}} >
+                            <option value={'bg-green'}>Verde</option>
+                            <option value={'bg-blue'}>Azul</option>
+                            <option value={'bg-orange'}>Amarelo</option>
+                            <option value={'bg-red'}>Vermelho</option>
                           </Input>
                         </Col>
                       </FormGroup>
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={2}>
-                      <FormGroup row check>
-                        <Label check >
-                          <Input type="checkbox" value={this.state.restricao} onClick={this.restricaoChange}/>
-                          Com restrição
-                        </Label>
-                      </FormGroup>
-                    </Col>
                     {
                       this.state.restricao ?
-                        <Col md={10}>
-                          <FormGroup row>
-                            <Label for="exampleText">Descrição</Label>
-                            <Input type="textarea" name="text" id="exampleText" />
-                          </FormGroup>
-                        </Col>
+                        ''
                         : ''
                     }
                   </Row>
@@ -129,75 +150,6 @@ class IncluirEditarCardapio extends Component{
               </ModalFooter>
 
         </Modal>
-
-
-        {/* <Row>
-          <Col>
-            <Card>
-              <CardHeader className="pb-2">
-                <i className="icons icon-book-open font-3xl align-middle"></i>
-                <span className="font-weight-bold font-4xl text-uppercase ml-3 align-middle">{this.props.cardapio ? 'Editar':'Incluir'} Cardápio</span>
-              </CardHeader>
-              <CardBody>
-                <Form>
-                  <Row>
-                    <Col md={12}>
-                      <FormGroup row>
-                        <Label for="nome" md={2}>Nome cardápio</Label>
-                        <Col md={10}>
-                          <Input  type="text" name="nome" id="nome" placeholder="Nome do Cardápio"/>
-                        </Col>
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col md={12}>
-                      <FormGroup row>
-                        <Label for="icone" md={2}>Icone</Label>
-                        <Col md={10}>
-                          <Input type="select" name="icone" id="icone">
-                            {
-
-                            }
-                            <option>5</option>
-                          </Input>
-                        </Col>
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col md={2}>
-                      <FormGroup row check>
-                        <Label check >
-                          <Input type="checkbox" value={this.state.restricao} onClick={this.restricaoChange}/>
-                          Com restrição
-                        </Label>
-                      </FormGroup>
-                    </Col>
-                    {
-                      this.state.restricao ?
-                        <Col md={10}>
-                          <FormGroup row>
-                            <Label for="exampleText">Descrição</Label>
-                            <Input type="textarea" name="text" id="exampleText" />
-                          </FormGroup>
-                        </Col>
-                        : ''
-                    }
-                  </Row>
-                </Form>
-              </CardBody>
-              <CardFooter>
-                <Row>
-                  <Col md={12}>
-                    <Button color="secondary" className=" m-1 float-right align-middle"  size="lg">Cancelar</Button>{' '}
-                    <Button color="success" className="m-1 float-right align-middle" size="lg">Salvar</Button>{' '}
-                  </Col>
-                </Row>
-              </CardFooter>
-            </Card>
-          </Col>
-        </Row> */}
       </div>
     );
   }

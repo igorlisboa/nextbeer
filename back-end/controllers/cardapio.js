@@ -5,14 +5,14 @@ index = async (req,res) =>{
 	res.status(200).json({ success: { cardapio }});
 };
 
-//
-// save = async (req,res) =>{
-// 	let novoUsuario = new Usuarios(req.body);
-// 	await novoUsuario.save();
-// 	console.info("Save is working");
-// 	return res.send("So Jesus salva!");
-// };
-//
+
+save = async (req,res) =>{
+	let cardapio = new CardapioModel(req.body);
+	await cardapio.save();
+	console.info("Save is working");
+	return res.send("So Jesus salva!");
+};
+
 // update = async (req,res) =>{
 // 	let atualizaUsuario = await Usuarios.where({_id:req.body._id}).update(req.body.dados).exec()
 // 	.then(()=>{
@@ -29,7 +29,7 @@ index = async (req,res) =>{
 
 module.exports = {
 	index,
-	// save,
+	save,
 	// del,
 	// update
 }

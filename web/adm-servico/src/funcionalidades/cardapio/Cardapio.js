@@ -8,24 +8,20 @@ import axios from 'axios';
 
 export default class Cardapio extends Component{
 
-  listaCardapios = [];
-
-  constructor(){
+    constructor(){
     super();
 
     this.state = {
       isOpenModalIncluirEditar : false,
+      listaCardapios : []
     };
 
     this.buscaCardapios = this.buscaCardapios.bind(this);
     this.novoCardapio = this.novoCardapio.bind(this);
     this.toggle = this.toggle.bind(this);
+    // this.buscaCardapios();
 
-    this.listaCardapios = this.buscaCardapios();
-  }
-
-  componentDidMount(){
-    this.buscaCardapios();
+     this.buscaCardapios();
   }
 
   render(){
@@ -43,8 +39,8 @@ export default class Cardapio extends Component{
                 <CardBody>
                   <Row>
                       {
-                        this.listaCardapios.length > 0 ?
-                            this.listaCardapios.map(cardapio =>{
+                        this.state.listaCardapios && this.state.listaCardapios.length > 0 ?
+                            this.state.listaCardapios.map(cardapio =>{
                                 return (<CardapioSub dados={cardapio}></CardapioSub>)
                             })
                         :
@@ -75,100 +71,18 @@ export default class Cardapio extends Component{
   }
 
   buscaCardapios(){
-
-   return [
-      {
-        nome: "Drink's",
-        icone: "fa fa-glass",
-        itens: [
-          {
-            codigoProduto: "a12",
-            nome: "teste",
-            preco: "12.3",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar.",
-            imagens: [
-              {
-                path: "https://pizzariatop10.com.br/pedido-online/image/cache/data/produtos/p.batata.fw-600x600.png"
-              }
-            ]
-          }
-        ],
-        tema: 'bg-green'
-      },
-      {
-        nome: "Comidas",
-        icone: "fa fa-cutlery",
-        itens: [
-          {
-            codigoProduto: "a12",
-            nome: "teste",
-            preco: "12.3",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar.",
-            imagens: [
-              {
-                path: "https://pizzariatop10.com.br/pedido-online/image/cache/data/produtos/p.batata.fw-600x600.png"
-              }
-            ]
-          }
-        ],
-        tema: 'bg-blue'
-      },
-      {
-        nome: "Bebidas",
-        icone: "fa fa-beer",
-        itens: [
-          {
-            codigoProduto: "a12",
-            nome: "teste",
-            preco: "12.3",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar.",
-            imagens: [
-              {
-                path: "https://pizzariatop10.com.br/pedido-online/image/cache/data/produtos/p.batata.fw-600x600.png"
-              }
-            ]
-          }
-        ],
-        tema: 'bg-orange'
-      },
-      {
-        nome: "Diversão",
-        icone: "fa fa-gamepad",
-        itens: [
-          {
-            codigoProduto: "a12",
-            nome: "teste",
-            preco: "12.3",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales venenatis turpis ullamcorper consectetur. Vivamus fermentum nunc ipsum, at pulvinar.",
-            imagens: [
-              {
-                path: "https://pizzariatop10.com.br/pedido-online/image/cache/data/produtos/p.batata.fw-600x600.png"
-              }
-            ]
-          }
-        ],
-        tema: 'bg-red'
-      }
-    ]
-
-
-
-    /*axios.get('http://localhost:8000/cardapio', {
+    axios.get('http://localhost:8000/cardapio', {
       headers:{
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept': 'application/json'}
     })
       .then(response => {
-        console.log(response)
+        this.setState({ listaCardapios : response.data.success.cardapio});
       })
       .catch(err =>{
         console.log(err)
+        alert('erro na consulta ' + err)
       });
-    // fetch('http://localhost:8000/cardapio')
-    //   .then(response => response.json())
-    //   .then(data => console.log(data));
-
-    // return true*/
   }
 
 }

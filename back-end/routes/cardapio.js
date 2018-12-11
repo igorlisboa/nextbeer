@@ -11,7 +11,7 @@ const CardapioController = require('../controllers/cardapio');
 router.route('/')
     .get(CardapioController.index);
 
-//POST salva novo Cardapio
+// POST salva novo Cardapio
 router.route('/')
 	.post(CardapioController.save);
 /*
